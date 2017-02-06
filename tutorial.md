@@ -1,5 +1,5 @@
 # Turn python script to an setup file
-## Method 1: using pyinstaller
+## Method 1: Using pyinstaller and Inno Setup
 Steps 1 to 3 only need to be done once
 
 1. Install pyinstaller package through pip 
@@ -48,5 +48,8 @@ Steps 1 to 3 only need to be done once
 5. Once you have the exe file, copy *vbaProject.bin* in the script folder to the executable folder *dist/yourApp*
 6. Test the executable by running it with some XML files to see if it works properly
 7. Download Inno Setup [here](http://www.jrsoftware.org/isinfo.php) or search *Inno Setup* online
-8. Run Inno Setup and you can refer to the example .iss script file*OLPEXE.iss* 
+8. Run Inno Setup and you can refer to the example .iss script file *OLPEXE.iss* 
 
+## Method 2: Using WinPython and Inno Setup
+1. Download WinPython [here](https://sourceforge.net/projects/winpython/) or search WinPython online
+2. 
