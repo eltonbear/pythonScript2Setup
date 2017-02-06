@@ -53,9 +53,13 @@ Steps 1 to 3 only need to be done once
 ## Method 2: Using WinPython and Inno Setup
 1. Download WinPython [here](https://sourceforge.net/projects/winpython/) or search WinPython online
 2. Create a folder named *MyApplication* somewhere in your computer. This folder will eventually be copied to *C:\Program Files\MyApplication* (for example) by the installer.
-3. Install WinPython into, for instance, MyApplication\WinPython-64bit-w.x.y.z (w, x, y, z are the version number)
+3. Install WinPython into, for instance, *MyApplication\WinPython-64bit-w.x.y.z* (w, x, y, z are the version number)
 
     WinPython contains a GUI called *WinPython Control Panel* which allows you to install/uninstall Python packages. There are many packages already built in. You can remove those you don't need and add new Python packages. Reference [here](http://cyrille.rossant.net/create-a-standalone-windows-installer-for-your-python-application/).
+    
+    For example, HKOLP requires Python packages below:
+    * XlsxWriter - might already be installed
+    * openpyxl
 4. Download and install Inno Setup [here](http://www.jrsoftware.org/isinfo.php)
 5. Run Inno Setup. You can use the wizard to create a new installer file (.iss file) or write a .iss file from scratch
    You can refer to the sample .iss script *OLPScript.iss* in the repository 
