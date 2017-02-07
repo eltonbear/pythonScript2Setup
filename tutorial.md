@@ -40,6 +40,7 @@ Steps 1 to 3 only need to be done once
 
 	##### options: 
 	-w, --windowed, --noconsole: do not provide a console window for standard i/o
+	
 	-n NAME, --name NAME: Name to assign to the bundled app and spec file (default is the first script’s basename)
 
 	For more options, click [here](https://pythonhosted.org/PyInstaller/usage.html#capturing-windows-version-data)
