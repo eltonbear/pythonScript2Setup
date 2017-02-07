@@ -24,26 +24,27 @@ Steps 1 to 3 only need to be done once
     The result should be 3.n for a released version. If the command is not found, make sure the execution path includes the proper directory.
 
 4. Create an executable from Python scripts
-	a. In command window, cd to the directory where the Python scripts are
-	b. In command window, type:
-    	```sh
-    	$ pyinstaller filename.py
-    	```
-    	where filename is the file name of the Python script
-	c. Once it’s completed, the executable can be found in *dist* folder in the Python script folder
-    
-	Alternatively, you can type: 
-	```sh
-	pyinstaller options ~/myproject/source/myscript.py
-	```
-	where *~/myproject/source/myscript.py* is the path of the script.
-
-	##### options: 
-	-w, --windowed, --noconsole: do not provide a console window for standard i/o
+	1. In command window, cd to the directory where the Python scripts are
+	2. In command window, type:
 	
-	-n NAME, --name NAME: Name to assign to the bundled app and spec file (default is the first script’s basename)
+		```sh
+		$ pyinstaller filename.py
+		```
+		where filename is the file name of the Python script
+	3. Once it’s completed, the executable can be found in *dist* folder in the Python script folder
+    
+		Alternatively, you can type: 
+		```sh
+		pyinstaller options ~/myproject/source/myscript.py
+		```
+		where *~/myproject/source/myscript.py* is the path of the script.
 
-	For more options, click [here](https://pythonhosted.org/PyInstaller/usage.html#capturing-windows-version-data)
+		##### options: 
+			-w, --windowed, --noconsole: do not provide a console window for standard i/o
+
+			-n NAME, --name NAME: Name to assign to the bundled app and spec file (default is the first script’s basename)
+
+			For more options, click [here](https://pythonhosted.org/PyInstaller/usage.html#capturing-windows-version-data)
 
 5. Once you have the exe file, copy *vbaProject.bin* in the script folder to the executable folder *dist/yourApp*
 6. Test the executable by running it with some XML files to see if it works properly
