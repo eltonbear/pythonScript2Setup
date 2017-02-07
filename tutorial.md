@@ -46,7 +46,7 @@ Steps 1 to 3 only need to be done once
 
 		For more options, click [here](https://pythonhosted.org/PyInstaller/usage.html#capturing-windows-version-data)
 
-5. Once you have the exe file, copy *vbaProject.bin* in the script folder and paste it in the executable folder *dist/yourApp*
+5. Once you have the executable, copy *vbaProject.bin* in the script folder and paste it in the application folder *dist/yourApp*
 6. Test the executable by running it with some XML files to see if it works properly
 7. Download Inno Setup [here](http://www.jrsoftware.org/isinfo.php) or search *Inno Setup* online
 8. Run Inno Setup. You can refer to the sample .iss script *OLPEXE.iss* in the repository 
