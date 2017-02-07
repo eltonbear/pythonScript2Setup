@@ -14,7 +14,7 @@ AppId={{54004617-6062-41A4-ABD0-3862E56655D1}
 AppName={#MyAppName}
 AppVersion={#MyAppVersion}
 ;AppVerName={#MyAppName} {#MyAppVersion}
-AppPublisher={#MyAppPublisher}; The name of the folder that is installed
+AppPublisher={#MyAppPublisher}; The default name of the folder that is installed
 ; pf is the path of the system's Program Files directory (see help, constants)
 DefaultDirName={pf}\{#MyAppName}
 DisableProgramGroupPage=yes
@@ -35,7 +35,7 @@ Name: "desktopicon"; Description: "{cm:CreateDesktopIcon}"; GroupDescription: "{
 [Files]
 ; This section copys the application folder to a destination where you want to install the applcation
 ; {app} is the application directory, which the user selects on the Select Destination Location page of the wizard.
-; The line below copys the entire HKOLP folders and its subfolders (see Flags) because the executable needs all files in the this folder to run.
+; The line below copys the entire HKOLP folders and its subfolders (see Flags) because the executable needs all files in the this folder to run. (* is needed)
 Source: "D:\Elton Bear\Desktop\HKOLP\*"; DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs
 ; NOTE: Don't use "Flags: ignoreversion" on any shared system files
 
