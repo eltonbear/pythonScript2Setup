@@ -53,13 +53,21 @@ Steps 1 to 3 only need to be done once
 ## Method 2: Using WinPython and Inno Setup
 1. Download WinPython [here](https://sourceforge.net/projects/winpython/) or search WinPython online
 2. Create a folder named *MyApplication* somewhere in your computer. This folder will eventually be copied to *C:\Program Files\MyApplication* (for example) by the installer.
-3. Install WinPython into, for instance, *MyApplication\WinPython-64bit-w.x.y.z* (w, x, y, z are the version number)
+3. Install WinPython into, for instance, *MyApplication\WinPython-64bit-w.x.y.z* (w, x, y, z are the version numbers)
 
-    WinPython contains a GUI called *WinPython Control Panel* which allows you to install/uninstall Python packages. There are many packages already built in. You can remove those you don't need and add new Python packages. Reference [here](http://cyrille.rossant.net/create-a-standalone-windows-installer-for-your-python-application/).
+    WinPython contains a GUI called *WinPython Control Panel* which allows you to install/uninstall Python packages. (In *WinPython-64bit-w.x.y.z* folder) There are lots of packages already built in. You can remove those you don't need and add new Python packages. Reference [here](http://cyrille.rossant.net/create-a-standalone-windows-installer-for-your-python-application/).
     
     For example, HKOLP requires Python packages below:
     * XlsxWriter - might have already been installed by WinPython
     * openpyxl
+
+    Alternatively, you can install packages through *WinPython Command Prompt* or *WinPython Powershell Prompt* (In *WinPython-64bit-w.x.y.z* folder) by typing
+    ```sh
+	$ python -m pip install -U pip packageName
+    ```
+
+    Note that if you don't uninstall packages that you don't need. The size of the application and the setup file will become really large. The time it takes to build a setup file is also longer.
 4. Download and install Inno Setup [here](http://www.jrsoftware.org/isinfo.php)
-5. Run Inno Setup. You can use the wizard to create a new installer file (.iss file) or write a .iss file from scratch
-   You can refer to the sample .iss script *OLPScript.iss* in the repository 
+5. Place all the requried scripts for this applcation in, for example, *WinPython-64bit-w.x.y.z\python-a.b.c.efg64\Lib\site-packages\HOKLP*. You can also have the scripts somewhere directly in your application folder, not necessarily in Python site-packages. You just need to specify the correct paths for *WorkingDir* and *Parameters* under *[Icons]* section in the .iss script. (see the next step and refer to the sample script *OLPScript.iss* in the repository)
+6. Run Inno Setup. You can use the wizard to create a new installer file (.iss file) or write a .iss file from scratch 
+
