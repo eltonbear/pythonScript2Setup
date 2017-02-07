@@ -1,4 +1,4 @@
-# Turn Python scripts to an setup file
+#  Create an installer for Python scripts 
 ## Method 1: Using PyInstaller and Inno Setup
 Steps 1 to 3 only need to be done once
 
