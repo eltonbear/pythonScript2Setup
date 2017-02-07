@@ -14,11 +14,11 @@ Steps 1 to 3 only need to be done once
     ```
 3. Set Environmental Variables:
 
-	Control Panel -> System and Security -> System -> Advanced system setting (left column) -> Environmental Variables -> System variables -> edit variable *Path* -> In *Variable value*, add path in the end:
+	Control Panel -> System and Security -> System -> Advanced system setting (left column) -> Environmental Variables -> System variables -> edit variable *Path* -> In *Variable value*, add path in the end, for example:
 	
-	*;C:\AppData\Local\Programs\Python\PythonXY\Scripts* (example)
+	*;C:\AppData\Local\Programs\Python\PythonXY\Scripts*
 	
-    The path depends on where PyInstaller (script) is installed in your computer. XY stands for the Python version.
+    The path depends on where PyInstaller (script) is installed in your computer. XY stands for your Python version.
     Now in command window, type:
     ```sh
 	$ pyinstaller --version
