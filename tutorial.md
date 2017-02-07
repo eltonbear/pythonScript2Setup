@@ -2,11 +2,13 @@
 ## Method 1: Using PyInstaller and Inno Setup
 Steps 1 to 3 only need to be done once
 
-1. Install PyInstaller package through pip 
+1. Install PyInstaller package through pip
+
     ```sh
     $ python -m pip install -U pip PyInstaller
     ```
 2. Install pefile package via pip:
+
     ```sh
 	$ python -m pip install -U pip pefile
     ```
