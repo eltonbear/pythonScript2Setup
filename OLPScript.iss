@@ -33,7 +33,7 @@ Source: "D:\Elton Bear\Desktop\HKOLPscripts\*"; DestDir: "{app}"; Flags: ignorev
 [Icons]
 ; This section creates application icons (shortcuts). First one creates an icon in "c: programs" with a name call MyAppName = "HKOLP". The second line creates an icon on desktop.
 ; Both shortcuts run the file at "{app}\WinPython-64bit-3.5.2.3\python-3.5.2.amd64\pythonw.exe" with an working directory at "{app}\WinPython-64bit-3.5.2.3\python-3.5.2.amd64\site-packages\HKOLP\scripts" where the script "interface.py"
-; is. Parameter specifies the parameter for the shortcut; in this case, it's the script "interface.py". IconFilename gives a pic for the icon.
+; is. Parameter specifies the parameter for the shortcut; in this case, it's the script "interface.py". IconFilename gives a pic for the icon. Icon picture is an .ico file.
 Name: "{commonprograms}\{#MyAppName}"; Filename: "{app}\{#MyAppExePath}";WorkingDir: "{app}\{#MyScriptFolder}"; Parameters: """{app}\{#MyScriptFolder}\interface.py"""; IconFilename: "{app}\picture\icon.ico"
 Name: "{commondesktop}\{#MyAppName}"; Filename: "{app}\{#MyAppExePath}";WorkingDir: "{app}\{#MyScriptFolder}"; Parameters: """{app}\{#MyScriptFolder}\interface.py"""; IconFilename: "{app}\picture\icon.ico"
 

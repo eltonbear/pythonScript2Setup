@@ -41,7 +41,7 @@ Source: "D:\Elton Bear\Desktop\HKOLP\*"; DestDir: "{app}"; Flags: ignoreversion 
 
 [Icons]
 ; This section creates application icons (shortcuts). First one creates an icon in "c: programs" with a name call MyAppName = "HKOLP". The second line creates an icon on desktop if user selects to create one.
-; Both shortcuts run the file at "{app}\dist\HKOLP\HKOLP" (see Filename) with an working directory at "{app}\dist\HKOLP". IconFilename gives a pic for the icon with a correct path of the picture. WorkingDir is not needed in this case.
+; Both shortcuts run the file at "{app}\dist\HKOLP\HKOLP" (see Filename) with an working directory at "{app}\dist\HKOLP". IconFilename gives a pic for the icon with a correct path of the picture. Icon picture is an .ico file. WorkingDir is not needed in this case. 
 Name: "{commonprograms}\{#MyAppName}"; Filename: "{app}\dist\{#MyAppName}\{#MyAppExeName}"; WorkingDir: "{app}\dist\{#MyAppName}"; IconFilename: "{app}\picture\icon.ico"
 Name: "{commondesktop}\{#MyAppName}"; Filename: "{app}\dist\{#MyAppName}\{#MyAppExeName}"; WorkingDir: "{app}\dist\{#MyAppName}"; IconFilename: "{app}\picture\icon.ico"; Tasks: desktopicon
 
