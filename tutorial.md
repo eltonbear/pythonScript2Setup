@@ -44,7 +44,7 @@ Steps 1 to 3 only need to be done once
 		##### options: 
 		-w, --windowed, --noconsole: do not provide a console window for standard i/o
 
-		-n NAME, --name NAME: Name to assign to the bundled app and spec file (default is the first script’s basename)
+		-n NAME, --name NAME: Name to assign to the bundled app and spec file (default is the first script’s basename).
 
 		For more options, click [here](https://pythonhosted.org/PyInstaller/usage.html#capturing-windows-version-data)
 
@@ -54,7 +54,7 @@ Steps 1 to 3 only need to be done once
 8. Run Inno Setup. You can refer to the sample .iss script *OLPEXE.iss* in the repository 
 
 ## Method 2: Using WinPython and Inno Setup
-1. Download WinPython [here](https://sourceforge.net/projects/winpython/) or search WinPython online
+1. Download WinPython [here](https://sourceforge.net/projects/winpython/) or search WinPython online (zero version: [here](https://sourceforge.net/projects/winpython/files/WinPython_3.5/3.5.3.0/WinPython-64bit-3.5.3.0Zero.exe/download), zero means there is nearly zero packages. Note that if you use zero version, you will need to install PyQt5 to run WinPython Control Panel. See how to install package in step 3.)
 2. Create a folder named *MyApplication* somewhere in your computer. This folder will eventually be copied to *C:\Program Files\MyApplication* (for example) by the installer
 3. Install WinPython into, for instance, *MyApplication\WinPython-64bit-w.x.y.z* (w, x, y, z are the version numbers)
 
