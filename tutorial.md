@@ -5,12 +5,12 @@ Steps 1 to 3 only need to be done once
 1. Install PyInstaller package through pip
 
     ```sh
-    $ python -m pip install -U pip PyInstaller
+    $ python -m pip install -U PyInstaller
     ```
 2. Install pefile package via pip:
 
     ```sh
-	$ python -m pip install -U pip pefile
+	$ python -m pip install -U pefile
     ```
 3. Set Environmental Variables:
 
@@ -66,7 +66,7 @@ Steps 1 to 3 only need to be done once
 
     Alternatively, you can install packages through *WinPython Command Prompt* or *WinPython Powershell Prompt* (in *WinPython-64bit-w.x.y.z* folder) by typing:
     ```sh
-	$ python -m pip install -U pip packageName
+	$ python -m pip install -U packageName
     ```
 
     Note that if you don't uninstall packages that you don't need. The size of the application and the setup file will become really large. The time it takes to build a setup file is also longer.
